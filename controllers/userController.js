@@ -2,13 +2,17 @@ const bcrypt = require('bcryptjs');
 const User = require('../models/User');
 const jwt = require('jsonwebtoken');
 
+
 exports.register = async (req, res) => {
     try {
         const { firstname, lastname, email, password } = req.body;
         const userExists = await User.findOne({ email });
         if (userExists) return res.status(400).json({ message: 'User already exists' });
 
-        const user = new User({firstname, lastname, email, password});
+        // Include image path if available
+        const profileImagePath = req.file ? req.file.path : null;
+
+        const user = new User({firstname, lastname, email, password, profileImage: profileImagePath});
         await user.save();
 
         res.status(201).json({ message: 'User created successfully' });
@@ -19,8 +23,8 @@ exports.register = async (req, res) => {
 
 exports.login = async (req, res) => {
     try {
-        const { username, password } = req.body;
-        const user = await User.findOne({ username });
+        const { email, password } = req.body;
+        const user = await User.findOne({ email });
         if (!user || !(await bcrypt.compare(password, user.password))) {
             return res.status(401).json({ message: 'Incorrect username or password' });
         }

@@ -4,7 +4,7 @@ const morgan = require('morgan')
 const bodyParser = require('body-parser')
 require('dotenv').config();
 
-const AuthRoute = require('./routes/auth')
+const AuthRoute = require('./routes/userRoutes')
 
 
 const mongoDBConnectionString = process.env.MONGODB_CONNECTION_STRING;
