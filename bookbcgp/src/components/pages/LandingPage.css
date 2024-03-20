@@ -1,0 +1,295 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.landing-container {
+  background-color: #19181D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.background-image {
+  background-image: url('../../assets/images/landing-heroimage-left.png');
+  background-size: cover;
+  background-position: left;
+  flex-grow: 1;
+  height: 100%;
+  width: 50%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+  align-items: center; /* Align items vertically if needed */
+}
+
+.content-container {
+  width: 50%;
+}
+
+/* CSS for the red rectangle */
+/* CSS for the red rectangle */
+.boulevard-highlight {
+  position: absolute;
+  top: 50%; /* Adjust the top position as needed */
+  left: 50%; /* Adjust the left position as needed */
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 50px; /* Adjust height as needed */
+  background-color: #FF0000;
+  z-index: -1;
+}
+
+/* Rest of your existing CSS */
+
+
+/* CSS animation */
+@keyframes highlight-animation {
+  from {
+    opacity: 0; /* Start with opacity 0 */
+  }
+  to {
+    opacity: 0.5; /* End with opacity 0.5 (or any desired value) */
+  }
+}
+
+/* Rest of your existing CSS */
+
+.text-container {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-family: Roboto;
+  color: var(--Text-Color, #FFF4DF);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 84px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 30px;
+  margin-top: auto;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--Text-Color, #FFF4DF);
+  text-align: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+p {
+  color: var(--Text-Color, #FFF4DF);
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 43px;
+  border: none;
+  outline: none;
+  position: relative;
+  z-index: 1;
+  border-radius: 20px;
+  background: linear-gradient(92deg, #F90 -32.09%, #8C31FF 96.86%);
+  cursor: pointer;
+  white-space: nowrap; /* Prevent line break */
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0 auto; /* Center the button horizontally */
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  right: 1px;
+  top: 1px;
+  bottom: 1px;
+  border-radius: 20px;
+  background-color: #19181D;
+  z-index: -1;
+  transition: 200ms
+}
+.btn::after {
+  content: attr(data);
+  font-size: 16px;
+  background: linear-gradient(92deg, #F90 -32.09%, #8C31FF 96.86%);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 200ms;
+}
+.btn:hover::before {
+  opacity: 0%;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+.btn:hover::after{
+  color: #19181D;
+}
+
+/* Base styles */
+
+/* For Extra Small (XS) Devices */
+@media (max-width: 576px) {
+  /* CSS rules specific to extra small devices */
+}
+
+/* For Small (SM) Devices */
+@media (min-width: 577px) and (max-width: 768px) {
+  /* CSS rules specific to small devices */
+}
+
+/* For Medium (MD) Devices */
+@media (min-width: 769px) and (max-width: 992px) {
+  .background-image {
+    background-image: url('../../assets/images/landing-heroimage-left.png');
+    background-size: cover;
+    background-position: left;
+    flex-grow: 1;
+    height: 100%;
+    width: auto;
+    
+    position: relative; /* Enable absolute positioning for the image */
+  }
+  h1 {
+    font-family: Roboto;
+    color: var(--Text-Color, #FFF4DF);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+    margin-top: auto;
+  }
+  
+  h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--Text-Color, #FFF4DF);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    color: var(--Text-Color, #FFF4DF);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+
+  /* CSS rules specific to medium devices */
+}
+
+@media (max-width: 576px) {
+  .landing-container {
+    background-color: #19181D; /* Set background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; /* Ensure content is stacked vertically */
+    overflow: hidden; /* Hide overflow content */
+  }
+  
+  .background-image {
+    background-image: url('../../assets/images/Book-mobile.png');
+    background-size: 125%;
+    background-position: center top; /* Adjusted for better positioning */
+    width: 100%; /* Make sure the image covers the entire width */
+    height: 100%; /* Adjusted to fill the container */
+    position: relative;
+    top: -10%; /* Move the image up */
+  }
+  
+  .text-container {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px; /* Add some space between image and text */
+  }
+
+  .content-container {
+    width: 100%;
+  }
+
+  h1,
+  h2,
+  p {
+    color: var(--Text-Color, #FFF4DF);
+  }
+  
+  h1 {
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    white-space: nowrap; /* Prevent line break */
+    margin-bottom: 10px; /* Add some space below heading */
+    margin: 0 auto; /* Center the text horizontally */
+  }
+  
+  h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px; /* Add some space below subheading */
+  }
+  
+  p {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 20px; /* Add some space below paragraph */
+  }
+
+  .btn {
+    padding: 10px 43px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background: linear-gradient(92deg, #F90 -32.09%, #8C31FF 96.86%);
+    cursor: pointer;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 100px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
