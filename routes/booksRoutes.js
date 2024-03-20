@@ -11,4 +11,6 @@ router.post('/:bookId/testimonials', bookController.addTestimonialToBook);
 
 router.get('/:bookId', bookController.getBookById);
 
+router.put('/:bookId/update', bookController.updateBookDetails);
+
 module.exports = router;
