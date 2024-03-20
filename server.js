@@ -4,7 +4,8 @@ const morgan = require('morgan')
 const bodyParser = require('body-parser')
 require('dotenv').config();
 
-const AuthRoute = require('./routes/userRoutes')
+const userRoutes = require('./routes/userRoutes');
+const booksRoutes = require('./routes/booksRoutes');
 
 
 const mongoDBConnectionString = process.env.MONGODB_CONNECTION_STRING;
@@ -28,4 +29,5 @@ app.listen(PORT,()=>{
   console.log(`server is running on port ${PORT}`)
 })
 
-app.use('/api',AuthRoute)
+app.use('/api/users', userRoutes);
+app.use('/api/books', booksRoutes);
