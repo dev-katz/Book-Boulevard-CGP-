@@ -1,9 +1,13 @@
 import React from 'react'
 import './styles/Membership.css'
+import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
+
 
 export default function About() {
   return (
     <div className='membership-whole'>
+      <Navbar />
 
       <div className="membership-title">
         <h1>
@@ -20,7 +24,7 @@ export default function About() {
         </p>
         <p className='membership-paratwo'>
           Choose from our range of membership packages below to find the perfect fit for you.
-          Whether you're looking to connect with like-minded individuals, access premium content, or take
+          Whether you're looking to connect with like-minded individuals,<br />access premium content, or take
           advantage of professional development opportunities, we have a membership option
           designed to meet your requirements.
         </p>
@@ -32,27 +36,42 @@ export default function About() {
 
       <div class="membership-container">
 
-        <div class="membership-cards">
+        <div className="membership-cards">
           <h2>Basic Membership</h2>
           <p className='membership-para'>This package is designed for individuals who primarily want to access and read eBooks from the platform. It offers essential features for a seamless reading experience.</p>
-
-          <button class="membership-but" onclick="window.location.href='another-page.html'">view</button>
+          <ul className="membership-list">
+            <li>Access to a wide range of eBooks</li>
+            <li>Monthly newsletter</li>
+            <li>Community forum access</li>
+          </ul>
+          <button className="membership-but" onClick={() => window.location.href = 'another-page.html'}>$9.99/month</button>
         </div>
 
-        <div class="membership-cardtwo">
+        <div className="membership-cardtwo">
           <h2>Standard Membership</h2>
           <p className='membership-para'>You'll receive exclusive access to our carefully curated newsletter, delivering insights, updates, and invitations to upcoming events directly to your inbox every month.</p>
-
-          <button class="membership-but" onclick="window.location.href='another-page.html'">view</button>
+          <ul className="membership-list">
+            <li>All benefits of Basic Membership, plus:</li>
+            <li>Access to our online community forums</li>
+            <li>Discounts on merchandise and event tickets</li>
+          </ul>
+          <button className="membership-but" onClick={() => window.location.href = 'another-page.html'}>$19.99/month</button>
         </div>
 
-        <div class="membership-cardthree">
+        <div className="membership-cardthree">
           <h2>Premium Membership</h2>
-          <p className='membership-para'>Gain access to our dynamic forums where you can connect with peers, exchange ideas, and participate in and participate in discussions on various topics.</p>
-
-          <button class="membership-but" onclick="window.location.href='another-page.html'">view</button>
+          <p className='membership-para'>Gain access to our dynamic forums where you can connect with peers, exchange ideas, and participate in discussions on various topics.</p>
+          <ul className="membership-list">
+            <li>All benefits of Standard Membership, plus:</li>
+            <li>Exclusive webinars and events</li>
+            <li>One-on-one mentoring sessions</li>
+            <li>Specialized content and resources</li>
+          </ul>
+          <button className="membership-but" onClick={() => window.location.href = 'another-page.html'}>$29.99/month</button>
         </div>
+
       </div>
+      <Footer />
     </div>
   )
 }

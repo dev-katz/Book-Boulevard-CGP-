@@ -43,32 +43,6 @@
     color: white;
 }
 
-.login-button {
-    color: linear-gradient(to right, #FF9900, #8C31FF);
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    text-align: center;
-    display: inline-block;
-    cursor: pointer;
-    outline: none;
-    transition: all 0.3s ease;
-
-}
-
-.login-button:hover {
-    color: black;
-}
-
-
-
-
-
-
-
-
 .register-box-fix {
     padding: 10px 43px;
     outline: none;
