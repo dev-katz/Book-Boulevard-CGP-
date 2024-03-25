@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9d811d7-6459-42cb-8c39-3311404376e4" name="Changes" comment="books cards">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/bookcards.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/bookcards.json" afterDir="false" />
-    </list>
+    <list default="true" id="b9d811d7-6459-42cb-8c39-3311404376e4" name="Changes" comment="books cards" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,7 +70,7 @@
       <workItem from="1711344415185" duration="133000" />
       <workItem from="1711344572767" duration="759000" />
       <workItem from="1711351470294" duration="4236000" />
-      <workItem from="1711356364846" duration="858000" />
+      <workItem from="1711356364846" duration="1166000" />
     </task>
     <task id="LOCAL-00001" summary="update user authentication">
       <option name="closed" value="true" />
@@ -99,7 +96,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711354680070</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="books cards">
+      <option name="closed" value="true" />
+      <created>1711357408527</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711357408528</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
