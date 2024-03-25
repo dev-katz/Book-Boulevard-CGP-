@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9d811d7-6459-42cb-8c39-3311404376e4" name="Changes" comment="" />
+    <list default="true" id="b9d811d7-6459-42cb-8c39-3311404376e4" name="Changes" comment="update user authentication" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,11 +51,24 @@
       <updated>1711344413812</updated>
       <workItem from="1711344415185" duration="133000" />
       <workItem from="1711344572767" duration="759000" />
-      <workItem from="1711351470294" duration="1939000" />
+      <workItem from="1711351470294" duration="2458000" />
     </task>
+    <task id="LOCAL-00001" summary="update user authentication">
+      <option name="closed" value="true" />
+      <created>1711353658983</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711353658983</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update user authentication" />
+    <option name="LAST_COMMIT_MESSAGE" value="update user authentication" />
   </component>
 </project>
