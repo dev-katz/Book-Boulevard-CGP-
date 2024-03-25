@@ -25,6 +25,10 @@ const bookSchema = new mongoose.Schema({
         type: String,
         required: [true, 'A book Loader'],
     },
+    bookImg: {
+        type: String,
+        required: [true, 'A book Image'],
+    },
     author: {
         type: String,
         required: [true, 'A book must have an author'],
