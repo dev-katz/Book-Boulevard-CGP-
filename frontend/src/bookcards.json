@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "image": "https://img.freepik.com/premium-vector/monochrome-rustic-decoration-floral_24877-1898.jpg?w=740",
+        "title": "Book Name",
+        "author": "Author 1",
+        "description": "Enter the realm of deduction and mystery with 'Sherlock Holmes. Classic introduces Sherlock Holmes and Dr. John Watson as they embark on their first investigation together."
+        
+    },
+    {
+        "id": 2,
+        "image": "https://img.freepik.com/premium-vector/hand-drawn-spring-flowers-bouquet-beautiful-flower-vector-illustration_7130-2377.jpg?w=826",
+        "title": "Book Name 2",
+        "author": "Author 2",
+        "description": "Enter the realm of deduction and mystery with 'Sherlock Holmes. Classic introduces Sherlock Holmes and Dr. John Watson as they embark on their first investigation together."
+        
+    },
+    {
+        "id": 3,
+        "image": "https://img.freepik.com/free-vector/anemone-flower-collage-element-black-botanical-clipart-vector_53876-156550.jpg?w=826&t=st=1711172386~exp=1711172986~hmac=f74f3ba51a03f5a86a9c407681c4fefef1b18832e8a76d533c23d3b2b36d933f",
+        "title": "Book Name 3",
+        "author": "Author 3",
+        "description": "Enter the realm of deduction and mystery with 'Sherlock Holmes. Classic introduces Sherlock Holmes and Dr. John Watson as they embark on their first investigation together."
+        
+    },
+    {
+        "id": 4,
+        "image": "https://img.freepik.com/free-vector/anemone-flower-collage-element-black-botanical-clipart-vector_53876-156550.jpg?w=826&t=st=1711172386~exp=1711172986~hmac=f74f3ba51a03f5a86a9c407681c4fefef1b18832e8a76d533c23d3b2b36d933f",
+        "title": "Book Name 4",
+        "author": "Author 5",
+        "description": "Enter the realm of deduction and mystery with 'Sherlock Holmes. Classic introduces Sherlock Holmes and Dr. John Watson as they embark on their first investigation together."
+        
+    }
+]

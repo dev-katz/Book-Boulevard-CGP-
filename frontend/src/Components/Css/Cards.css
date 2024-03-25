@@ -1,0 +1,88 @@
+.cards-page {
+    padding: 20px;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    width: 300px; /* Set a fixed width for each card */
+    margin-right: 20px; /* Add margin between cards */
+    margin-bottom: 20px; /* Add margin at the bottom */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex; /* Make the card a flex container */
+  }
+  
+  .card:last-child {
+    margin-right: 0; /* Remove margin from the last card in a row */
+  }
+  
+  .card-image {
+    flex: 0 0 40%; /* Ensure fixed width for image */
+    overflow: hidden;
+  }
+
+  .card-image img {
+    width: 100%; /* Fill the entire space of the image container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .card-content {
+    flex: 1; /* Take up remaining space */
+  }
+
+  .card img {
+    width: 40%;
+    float: left;
+  }
+  
+  .card-details {
+    padding: 20px;
+  }
+
+  .card p {
+    margin: 10px 0; /* Add margin between elements */
+    
+  }
+
+  .card h2 {
+    margin-top: 0;
+  }
+  
+  .card button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      width: calc(100% - 20px);
+    }
+  }
+  
+  .book-image {
+    flex: 0 0 40%; /* Ensure fixed width for book image */
+    overflow: hidden;
+  }
+  
+  .book-image img {
+    width: 100%; /* Fill the entire space of the book image container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  

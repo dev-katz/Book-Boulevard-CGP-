@@ -1,0 +1,124 @@
+.nav-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #8C31FF;
+  padding: 10px 20px;
+  color: white;
+
+  width: auto;
+  height: 64px;
+  flex-shrink: 0;
+}
+
+.nav-site-title {
+  font-size: 24px;
+  /* Default font size */
+}
+
+.nav-navbar-left {
+  flex: 1;
+}
+
+.nav-navbar-right {
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-navbar-right ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-navbar-right ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.nav-navbar-right ul li:first-child {
+  margin-left: 0;
+}
+
+.nav-navbar-right ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-menu-toggle {
+  display: none;
+  flex: 1;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.nav-bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.open .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.open .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+  .nav-navbar {
+    padding: 10px;
+    /* Adjust padding for smaller screens */
+  }
+
+  .nav-site-title {
+    font-size: 20px;
+    /* Adjust font size for smaller screens */
+  }
+
+  .nav-navbar-left {
+    display: block;
+  }
+
+  .nav-navbar-right {
+    display: none;
+  }
+
+  .nav-menu-toggle {
+    display: flex;
+  }
+
+  .nav-navbar-right.open {
+    display: block;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background-color: #000000;
+    width: 100%;
+    text-align: right;
+  }
+
+  .nav-navbar-right.open ul {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .nav-navbar-right.open ul li {
+    display: block;
+    margin: 15px 0%;
+    font-size: 20px;
+  }
+
+  .nav-navbar-right.open ul li:first-child {
+    margin-top: 0;
+  }
+}

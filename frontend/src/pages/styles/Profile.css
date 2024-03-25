@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+
+
+.rcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dropdown {
+  width: 100%;
+  /* Set the initial width for all dropdowns */
+  margin-top: 20px;
+  transition: width 0.3s ease;
+  /* Add transition for smooth width change */
+}
+
+.dropdown button {
+  width: 100%;
+  /* Ensure button takes full width */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dropdown button:hover {
+  background-color: #0056b3;
+}
+
+.dropdown-content {
+  display: block;
+  width: 100%;
+  /* Ensure dropdown content takes full width */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.dropdown-content h2 {
+  margin: 10px 0;
+}
+
+.input-group {
+  padding: 20px;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-group button {
+  width: 100%;
+  /* Ensure button takes full width */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input-group button:hover {
+  background-color: #0056b3;
+}
+
+.logout-section {
+  width: 80%;
+  /* Set the width for logout section */
+  margin-top: 20px;
+}
