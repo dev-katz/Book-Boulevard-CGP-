@@ -4,14 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9d811d7-6459-42cb-8c39-3311404376e4" name="Changes" comment="update user authentication" />
+    <list default="true" id="b9d811d7-6459-42cb-8c39-3311404376e4" name="Changes" comment="update user authentication">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Cards.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Cards.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Css/Cards.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Css/Cards.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/dev/backend" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "dev-katz"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="e436fc46-d117-4912-9dcd-554d08546ed8" />
+        <option name="url" value="https://github.com/dev-katz/Book-Boulevard-CGP-" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -51,7 +72,7 @@
       <updated>1711344413812</updated>
       <workItem from="1711344415185" duration="133000" />
       <workItem from="1711344572767" duration="759000" />
-      <workItem from="1711351470294" duration="2458000" />
+      <workItem from="1711351470294" duration="3078000" />
     </task>
     <task id="LOCAL-00001" summary="update user authentication">
       <option name="closed" value="true" />
@@ -61,11 +82,30 @@
       <option name="project" value="LOCAL" />
       <updated>1711353658983</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update user authentication">
+      <option name="closed" value="true" />
+      <created>1711354016598</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711354016598</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update user authentication" />

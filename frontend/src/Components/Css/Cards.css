@@ -1,88 +1,140 @@
-.cards-page {
-    padding: 20px;
-  }
-  
+.ProfileSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+
+}
+
+.cards-page
+{
+  text-align: center;
+  background: var(--Background, #19181D);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 5%;
+
+}
+
+
+
+.card {
+  max-width: 300px; /* Adjust as needed */
+  background-color: rgb(26, 24, 24);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  color: white;
+  font-family: cursive;
+
+  /*border: 2px solid #000000;*/
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.book-image {
+  /* Adjust max-height as needed */
+  overflow: hidden;
+}
+
+.book-image .cardimage {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card-details .cardheading {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.card-details .carpara {
+  margin: 0;
+}
+
+.card-des
+{
+  text-align: justify;
+  margin:0 10px 20px 10px ;
+}
+
+/* book cards Button */
+
+.cardbutton {
+  padding: 10px 43px;
+  border: none;
+  outline: none;
+  position: relative;
+  z-index: 1;
+  border-radius: 20px;
+  background: linear-gradient(92deg, #F90 -32.09%, #8C31FF 96.86%);
+  cursor: pointer;
+  white-space: nowrap;
+  /* Prevent line break */
+  text-align: center;
+  font-family: RocknRoll One;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0 auto;
+  /* Center the button horizontally */
+}
+
+.cardbutton::before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  right: 1px;
+  top: 1px;
+  bottom: 1px;
+  border-radius: 20px;
+  background-color: #f1ecec;
+  z-index: -1;
+  transition: 200ms
+}
+
+.cardbutton::after {
+  content: attr(data);
+  font-size: 16px;
+  background: linear-gradient(92deg, #F90 -32.09%, #8C31FF 96.86%);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 200ms;
+}
+
+.cardbutton:hover::before {
+  opacity: 0%;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.cardbutton:hover::after
+{
+  color: #ffffff;
+}
+
+@media screen and (max-width: 960px) {
   .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .card {
-    width: 300px; /* Set a fixed width for each card */
-    margin-right: 20px; /* Add margin between cards */
-    margin-bottom: 20px; /* Add margin at the bottom */
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-    display: flex; /* Make the card a flex container */
-  }
-  
-  .card:last-child {
-    margin-right: 0; /* Remove margin from the last card in a row */
-  }
-  
-  .card-image {
-    flex: 0 0 40%; /* Ensure fixed width for image */
-    overflow: hidden;
-  }
-
-  .card-image img {
-    width: 100%; /* Fill the entire space of the image container */
-    height: auto; /* Maintain aspect ratio */
-  }
-
-  .card-content {
-    flex: 1; /* Take up remaining space */
-  }
-
-  .card img {
-    width: 40%;
-    float: left;
-  }
-  
-  .card-details {
+    justify-content: center; /* Center the cards */
     padding: 20px;
   }
+}
 
-  .card p {
-    margin: 10px 0; /* Add margin between elements */
-    
-  }
 
-  .card h2 {
-    margin-top: 0;
-  }
-  
-  .card button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  @media (max-width: 768px) {
-    .card {
-      width: calc(50% - 20px);
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .card {
-      width: calc(100% - 20px);
-    }
-  }
-  
-  .book-image {
-    flex: 0 0 40%; /* Ensure fixed width for book image */
-    overflow: hidden;
-  }
-  
-  .book-image img {
-    width: 100%; /* Fill the entire space of the book image container */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
+
