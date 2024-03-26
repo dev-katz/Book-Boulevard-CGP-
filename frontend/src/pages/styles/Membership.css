@@ -145,6 +145,7 @@
   font-weight: 700;
   color: #FFF4DF;
   transition: color 200ms ease-in-out;
+  margin-left: 25%;
 }
 
 .membership-but::before {

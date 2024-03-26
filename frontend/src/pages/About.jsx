@@ -5,7 +5,7 @@ import Footer from '../Components/Footer';
 
 const AboutUs = () => {
   return (
-    <div className="about-us">
+    <div className="about-about-us">
       <Navbar />
       <h1>About Us</h1>
       <p>Welcome to our Book Store! We are a passionate team dedicated to providing readers with an exceptional selection of books.<br /> Our store is the result of a collaborative group project aimed at bringing the joy of reading to everyone.</p>
@@ -15,7 +15,7 @@ const AboutUs = () => {
 
       <h2>Join Us</h2>
       <p>Become a part of our community today.<br /> Subscribe to explore our vast collection, and start your next reading adventure.</p>
-      <a href="/subscribe" className="subscribe-button">Subscribe Now</a>
+      <a href="/subscribe" className="about-subscribe-button">Subscribe Now</a>
       <Footer />
     </div>
   );

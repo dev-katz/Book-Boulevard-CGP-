@@ -45,7 +45,7 @@ export default function About() {
             <li>Community forum access</li>
             <li>Access to our online community forums</li>
           </ul>
-          <button className="membership-but" onClick={() => window.location.href = 'another-page.html'}>$9.99/month</button>
+          <button className="membership-but" onClick={() => window.location.href = '/checkout/$9.99'}>$9.99/month</button>
         </div>
 
         <div className="membership-cardtwo">
@@ -57,7 +57,7 @@ export default function About() {
             <li>Discounts on merchandise and event tickets</li>
             <li>Upload Books and other Text</li>
           </ul>
-          <button className="membership-but" onClick={() => window.location.href = 'another-page.html'}>$19.99/month</button>
+          <button className="membership-but" onClick={() => window.location.href = '/checkout/$19.99'}>$19.99/month</button>
         </div>
 
         <div className="membership-cardthree">
@@ -69,7 +69,7 @@ export default function About() {
             <li>Specialized content and resources</li>
             <li>Upload Books and other literature</li>
           </ul>
-          <button className="membership-but" onClick={() => window.location.href = 'another-page.html'}>$29.99/month</button>
+          <button className="membership-but" onClick={() => window.location.href = '/checkout/$29.99'}>$29.99/month</button>
         </div>
 
       </div>
