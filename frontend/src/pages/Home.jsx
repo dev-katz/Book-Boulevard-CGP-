@@ -28,7 +28,7 @@ export default function Home() {
           </p>
 
           <div className='home-but2'>
-            <Link to={"/Cards"}><button className="landing-btn" data="Explore Literary Treasures"></button></Link>
+            <Link to={"/Comingsoon"}><button className="landing-btn" data="Explore Literary Treasures"></button></Link>
           </div>
         </div>
       </div>
@@ -74,7 +74,7 @@ export default function Home() {
 
 
           <div className="home-but4">
-            <Link to={"/Shop"}><button className="landing-btn" data="Purchase Books"></button></Link>
+            <Link to={"/Comingsoon"}><button className="landing-btn" data="Purchase Books"></button></Link>
 
           </div>
 

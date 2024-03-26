@@ -43,6 +43,7 @@ export default function About() {
             <li>Access to a wide range of eBooks</li>
             <li>Monthly newsletter</li>
             <li>Community forum access</li>
+            <li>Access to our online community forums</li>
           </ul>
           <button className="membership-but" onClick={() => window.location.href = 'another-page.html'}>$9.99/month</button>
         </div>
@@ -54,18 +55,19 @@ export default function About() {
             <li>All benefits of Basic Membership, plus:</li>
             <li>Access to our online community forums</li>
             <li>Discounts on merchandise and event tickets</li>
+            <li>Upload Books and other Text</li>
           </ul>
           <button className="membership-but" onClick={() => window.location.href = 'another-page.html'}>$19.99/month</button>
         </div>
 
         <div className="membership-cardthree">
           <h2>Premium Membership</h2>
-          <p className='membership-para'>Gain access to our dynamic forums where you can connect with peers, exchange ideas, and participate in discussions on various topics.</p>
+          <p className='membership-para'>Gain access to our engaging and dynamic forums where you can connect with peers, exchange ideas, and participate in lively discussions on a wide range of topics.</p>
           <ul className="membership-list">
             <li>All benefits of Standard Membership, plus:</li>
             <li>Exclusive webinars and events</li>
-            <li>One-on-one mentoring sessions</li>
             <li>Specialized content and resources</li>
+            <li>Upload Books and other literature</li>
           </ul>
           <button className="membership-but" onClick={() => window.location.href = 'another-page.html'}>$29.99/month</button>
         </div>

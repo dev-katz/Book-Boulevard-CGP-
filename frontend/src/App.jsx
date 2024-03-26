@@ -11,6 +11,8 @@ import ExploreBooks from "./pages/ExploreBooks"
 import Cards from "./Components/Cards"
 import LoginPage from "./pages/LoginPage"
 import RegistrationPage from "./pages/RegistrationPage"
+import CheckoutPage from "./pages/CheckoutPage"
+import Comingsoon from "./pages/Comingsoon"
 
 
 
@@ -31,7 +33,8 @@ function App() {
           <Route path="/Membership" element={<Membership />} />
           <Route path="/LoginPage" element={<LoginPage />} />
           <Route path="/RegistrationPage" element={<RegistrationPage />} />
-
+          <Route path="/CheckoutPage" element={<CheckoutPage />} />
+          <Route path="/Comingsoon" element={<Comingsoon />} />
         </Routes>
       </div>
 

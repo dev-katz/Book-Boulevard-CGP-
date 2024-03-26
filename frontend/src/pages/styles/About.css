@@ -1,0 +1,34 @@
+.about-us {
+    background-color: #19181D;
+    color: #FFF4DF;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+}
+
+h1,
+h2 {
+    margin-top: 60px;
+}
+
+p {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.subscribe-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #FFF4DF;
+    color: #19181D;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+
+.subscribe-button:hover {
+    background-color: #e8e2d3;
+}

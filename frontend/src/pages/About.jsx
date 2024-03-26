@@ -1,58 +1,24 @@
 import React from 'react'
-import './styles/Membership.css'
+import './styles/About.css'
+import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
 
-export default function About() {
+const AboutUs = () => {
   return (
-    <div className='about-whole'>
+    <div className="about-us">
+      <Navbar />
+      <h1>About Us</h1>
+      <p>Welcome to our Book Store! We are a passionate team dedicated to providing readers with an exceptional selection of books.<br /> Our store is the result of a collaborative group project aimed at bringing the joy of reading to everyone.</p>
 
-      <div className="about-title">
-        <h1>
-          Welcome to our <br />
-          <span className='about-highlight'>Membership </span>Program!
-        </h1>
-      </div>
+      <h2>Our Team</h2>
+      <p>Our team consists of book lovers, seasoned experts in literature, and technology enthusiasts working together to create an immersive reading experience for our subscribers.<br /> We believe in the power of stories to inspire, educate, and entertain.</p>
 
-      <div className="about-title-description">
-        <p className='about-paraone'>
-          As a member,
-          you'll unlock a world of exclusive benefits, resources,
-          and opportunities tailored to your needs and interests.
-        </p>
-        <p className='about-paratwo'>
-          Choose from our range of membership packages below to find the perfect fit for you.
-          Whether you're looking to connect with like-minded individuals, access premium content, or take
-          advantage of professional development opportunities, we have a membership option
-          designed to meet your requirements.
-        </p>
-        <p className='about-parathree'>
-          Thank you for choosing to be part of our community!
-        </p>
-      </div>
-
-
-      <div class="about-container">
-
-        <div class="about-cards">
-          <h2>Basic Membership</h2>
-          <p className='about-para'>This package is designed for individuals who primarily want to access and read eBooks from the platform. It offers essential features for a seamless reading experience.</p>
-
-          <button class="about-but" onclick="window.location.href='another-page.html'">view</button>
-        </div>
-
-        <div class="about-cardtwo">
-          <h2>Standard Membership</h2>
-          <p className='about-para'>You'll receive exclusive access to our carefully curated newsletter, delivering insights, updates, and invitations to upcoming events directly to your inbox every month.</p>
-
-          <button class="about-but" onclick="window.location.href='another-page.html'">view</button>
-        </div>
-
-        <div class="about-cardthree">
-          <h2>Premium Membership</h2>
-          <p className='about-para'>Gain access to our dynamic forums where you can connect with peers, exchange ideas, and participate in and participate in discussions on various topics.</p>
-
-          <button class="about-but" onclick="window.location.href='another-page.html'">view</button>
-        </div>
-      </div>
+      <h2>Join Us</h2>
+      <p>Become a part of our community today.<br /> Subscribe to explore our vast collection, and start your next reading adventure.</p>
+      <a href="/subscribe" className="subscribe-button">Subscribe Now</a>
+      <Footer />
     </div>
-  )
-}
+  );
+};
+
+export default AboutUs;
