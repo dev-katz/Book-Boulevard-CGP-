@@ -12,7 +12,7 @@ function CheckoutPage() {
     const [tax, setTax] = useState(0);
 
     const openPayPalAPI = () => {
-        window.open('https://developer.paypal.com/docs/api/overview/', '_blank');
+        window.open('https://developer.paypal.com/docs/api/overview/');
     };
 
     // Calculate the Due Now amount
