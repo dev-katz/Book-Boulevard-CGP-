@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+/* eslint-disable react-hooks/rules-of-hooks */
+import React, { useState, useEffect } from 'react';
 import './styles/Profile.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons';
@@ -20,6 +21,12 @@ const FormPage = () => {
   const [emailError, setEmailError] = useState('');
   const [emailChangesSaved, setEmailChangesSaved] = useState(false);
 
+  const [username, setUsername] = useState(''); // State to store username
+
+  useEffect(() => {
+    // Simulating dynamic username fetch
+    setUsername('Ranil Wickremasingha');
+  }, []);
 
   const toggleUsernameDropdown = () => setIsUsernameOpen(!isUsernameOpen);
   const toggleEmailDropdown = () => setIsEmailOpen(!isEmailOpen);
@@ -60,7 +67,7 @@ const FormPage = () => {
       <div className="profile-center-content">
         <h1>Account Management</h1>
         <img src={profileImage} alt="Profile" className="profile-profile-picture" />
-        <h2>Ranil Wickremasingha</h2>
+        <h2>{username}</h2> {/* Display dynamic username */}
         <div className='profile-dropdown-container'>
           <div className="profile-dropdown">
             <button className='profile-dropdown-btn' onClick={toggleUsernameDropdown}>
@@ -70,7 +77,7 @@ const FormPage = () => {
               <div className="profile-dropdown-content">
                 <div className="profile-input-group">
                   <label>Current Username:</label>
-                  <input type="text" placeholder="Current Username" />
+                  <input className='current-name-ro' type="text" readOnly placeholder="Current Username" value={username} onChange={(e) => setUsername(e.target.value)} />
                   <label>First Name:</label>
                   <input type="text" placeholder="First Name" />
                   <label>Last Name:</label>

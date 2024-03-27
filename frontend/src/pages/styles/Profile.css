@@ -231,3 +231,8 @@
   font-weight: 600;
   line-height: normal;
 }
+
+.current-name-ro {
+  color: blue;
+  /* Or any other color you prefer */
+}
