@@ -25,21 +25,6 @@
   align-items: center;
 }
 
-.left {
-  justify-content: flex-start;
-}
-
-.center {
-  flex-grow: 1;
-  /* Allows the center section to grow and push other elements to the margins */
-  justify-content: center;
-}
-
-.right {
-  justify-content: flex-end;
-  margin-right: 7px;
-}
-
 .nav-links {
   list-style-type: none;
   display: flex;
@@ -62,17 +47,12 @@
   line-height: normal;
 }
 
-.profile-container {
+.nav-profile-container {
   display: flex;
   align-items: center;
   margin-right: 72px;
 }
 
-.profile-image {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-}
 
 .username {
   color: var(--Text-Color, #FFF4DF);

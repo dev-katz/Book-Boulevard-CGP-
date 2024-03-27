@@ -12,27 +12,27 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
-    useEffect(() => {
-        const fetchProfile = async () => {
-            const token = localStorage.getItem('jwtToken'); // Adjust 'jwtToken' as per your localStorage token key
-            if (token) {
-                try {
-                    const config = {
-                        headers: { Authorization: `Bearer ${token}` },
-                    };
-                    const response = await axios.get(`${process.env.REACT_APP_API_PATH}/users/profile`, config); // Adjust '/api/profile' as per your API endpoint
-                    setUsername(response.data.firstname); // Adjust 'username' based on your API response
-                } catch (error) {
-                    console.error("Error fetching profile:", error.response);
-                    // Handle error (e.g., redirect to login if unauthorized)
-                }
-            }
-        };
+  useEffect(() => {
+    const fetchProfile = async () => {
+      const token = localStorage.getItem('jwtToken'); // Adjust 'jwtToken' as per your localStorage token key
+      if (token) {
+        try {
+          const config = {
+            headers: { Authorization: `Bearer ${token}` },
+          };
+          const response = await axios.get(`${process.env.REACT_APP_API_PATH}/users/profile`, config); // Adjust '/api/profile' as per your API endpoint
+          setUsername(response.data.firstname); // Adjust 'username' based on your API response
+        } catch (error) {
+          console.error("Error fetching profile:", error.response);
+          // Handle error (e.g., redirect to login if unauthorized)
+        }
+      }
+    };
 
-        fetchProfile();
-    }, []);
+    fetchProfile();
+  }, []);
 
-    return (
+  return (
     <nav className="nav-navbar">
       <div className="nav-section left">
         <Link to="/" className="nav-site-title">
@@ -49,11 +49,11 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="nav-section right">
-        <div className="profile-container">
-            <span className="username">{username || "Username"}</span>
+        <div className="nav-profile-container">
+          <span className="username">{username || "Username"}</span>
         </div>
       </div>
-        <div className="nav-menu-toggle" onClick={toggleMenu}>
+      <div className="nav-menu-toggle" onClick={toggleMenu}>
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>
