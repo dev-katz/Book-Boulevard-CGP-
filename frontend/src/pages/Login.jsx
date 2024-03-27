@@ -7,6 +7,7 @@ import ReactLoading from 'react-loading';
 import { useNavigate } from 'react-router-dom';
 
 
+
 function LoginPage() {
     const navigate = useNavigate();
     const [email, setEmail] = useState('');
@@ -39,6 +40,9 @@ function LoginPage() {
         try {
             const response = await axios.post(`${process.env.REACT_APP_API_PATH}/users/login2fa`, { email, twoFactorCode });
             console.log(response.data);
+            localStorage.setItem('jwtToken', response.data.token);
+            const token = localStorage.getItem("jwtToken");
+            console.log(token);
             Swal.fire({
                 icon: 'success',
                 title: 'Logged In',

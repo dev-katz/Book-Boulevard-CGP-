@@ -6,14 +6,30 @@
   <component name="ChangeListManager">
     <list default="true" id="b9d811d7-6459-42cb-8c39-3311404376e4" name="Changes" comment="books cards">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/controllers/booksController.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/booksController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/Books.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/Books.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Cards.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Cards.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/testimonialController.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/testimonialController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/userController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/userRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/userRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Checkout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Checkout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Landing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Landing.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Login.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="JSX File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Merge.Settings">
     <option name="BRANCH" value="origin/release/overall" />
@@ -50,20 +66,30 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Node.js.Routes.js.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev/backend&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/KATZ/Desktop/MERN&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/KATZ/Desktop&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.3.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\KATZ\Desktop" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\KATZ\Desktop\MERN\frontend\src\pages" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -77,6 +103,12 @@
       <workItem from="1711351470294" duration="4236000" />
       <workItem from="1711356364846" duration="2186000" />
       <workItem from="1711358591962" duration="1608000" />
+      <workItem from="1711429257508" duration="736000" />
+      <workItem from="1711460479653" duration="219000" />
+      <workItem from="1711460711284" duration="327000" />
+      <workItem from="1711461173168" duration="7264000" />
+      <workItem from="1711472982594" duration="3209000" />
+      <workItem from="1711506189253" duration="4789000" />
     </task>
     <task id="LOCAL-00001" summary="update user authentication">
       <option name="closed" value="true" />
@@ -125,8 +157,38 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1e9808f4-e0bc-4548-bb99-8420645bfb95" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
+        <entry key="1e9808f4-e0bc-4548-bb99-8420645bfb95">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />

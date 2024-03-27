@@ -16,7 +16,7 @@ const LandingPage = () => {
           <p className='landing-parag'>Start Browsing Now</p>
         </div>
         <div className="landing-button-container">
-          <Link to={"/LoginPage"}><button className="landing-btn" data="Browse Library"></button></Link>
+          <Link to={"/Home"}><button className="landing-btn" data="Browse Library"></button></Link>
         </div>
       </div>
     </div>

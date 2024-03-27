@@ -17,7 +17,6 @@ exports.createTestimonial = async (req, res) => {
         // Assuming your Testimonial model accepts a userId or similar field for the author
         const testimonial = new Testimonial({
             author: user.firstname,
-            author: user.firstname,
             text,
             rating
         });

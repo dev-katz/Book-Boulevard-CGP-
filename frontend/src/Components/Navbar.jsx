@@ -1,16 +1,38 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Css/Navbar.css';
+import axios from 'axios';
 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
+  const [username, setUsername] = useState(''); // Store the username
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  return (
+    useEffect(() => {
+        const fetchProfile = async () => {
+            const token = localStorage.getItem('jwtToken'); // Adjust 'jwtToken' as per your localStorage token key
+            if (token) {
+                try {
+                    const config = {
+                        headers: { Authorization: `Bearer ${token}` },
+                    };
+                    const response = await axios.get(`${process.env.REACT_APP_API_PATH}/users/profile`, config); // Adjust '/api/profile' as per your API endpoint
+                    setUsername(response.data.firstname); // Adjust 'username' based on your API response
+                } catch (error) {
+                    console.error("Error fetching profile:", error.response);
+                    // Handle error (e.g., redirect to login if unauthorized)
+                }
+            }
+        };
+
+        fetchProfile();
+    }, []);
+
+    return (
     <nav className="nav-navbar">
       <div className="nav-section left">
         <Link to="/" className="nav-site-title">
@@ -28,10 +50,10 @@ const Navbar = () => {
       </div>
       <div className="nav-section right">
         <div className="profile-container">
-          <span className="username">Username</span>
+            <span className="username">{username || "Username"}</span>
         </div>
       </div>
-      <div className="nav-menu-toggle" onClick={toggleMenu}>
+        <div className="nav-menu-toggle" onClick={toggleMenu}>
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>

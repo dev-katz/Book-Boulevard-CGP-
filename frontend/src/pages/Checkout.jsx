@@ -3,43 +3,53 @@ import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import PayPalButton from '../Components/PayPalButton';
+import axios from 'axios';
+import * as PropTypes from "prop-types";
+
+
+
+PayPalButton.propTypes = {planId: PropTypes.string};
 
 function CheckoutPage() {
-    const userEmail = "ranil.wickremesinghe.unp@gmail.com";
     const { price } = useParams();
 
-    // Define tax and setTax using useState
+    // Initialize state for tax, dueNow, and userEmail
     const [tax, setTax] = useState(0);
+    const [dueNow, setDueNow] = useState('');
+    const [userEmail, setUserEmail] = useState('');
+    const planId = 'P-4FB92402EM194143HMX6A4GQ';// Use state to store the fetched email
 
     const openPayPalAPI = () => {
         window.open('https://developer.paypal.com/docs/api/overview/');
     };
 
-    // Calculate the Due Now amount
-    const [dueNow, setDueNow] = useState('');
-
     useEffect(() => {
-        // Convert price string to number (remove $ and /month)
+        // Function to fetch profile data and extract email
+        const fetchUserProfile = async () => {
+            try {
+                const token = localStorage.getItem('jwtToken'); // Adjust based on your token storage key
+                const response = await axios.get(`${process.env.REACT_APP_API_PATH}/users/profile`, {
+                    headers: { Authorization: `Bearer ${token}` },
+                });
+                setUserEmail(response.data.email); // Adjust based on your response structure
+            } catch (error) {
+                console.error("Error fetching user profile:", error);
+                // Handle error (e.g., redirect to login page if unauthorized)
+            }
+        };
+
+        fetchUserProfile();
+
+        // Convert price string to number and calculate taxes and dueNow amount
         const priceNumber = parseFloat(price.replace('$', '').replace('/month', ''));
-
-        // Calculate tax (9%)
         const calculatedTax = priceNumber * 0.09;
-
-        // Round tax to two decimal places
         const roundedTax = calculatedTax.toFixed(2);
-
-        // Set tax state
         setTax(roundedTax);
-
-        // Calculate VAT ($0.99/month)
-        const vat = 0.02;
-
-        // Calculate total Due Now amount
+        const vat = 0.99; // Adjusted to reflect fixed $1/month for simplicity
         const totalDueNow = priceNumber + calculatedTax + vat;
-
-        // Update state
-        setDueNow(totalDueNow.toFixed(2)); // Round to 2 decimal places
-    }, [price, setTax]); // Add setTax to the dependency array
+        setDueNow(totalDueNow.toFixed(2));
+    }, [price]); // Add setTax to the dependency array
 
     return (
         <main className="check-checkout-container">
@@ -79,9 +89,7 @@ function CheckoutPage() {
                         <p className="check-subscription-due-lable">Due Now</p>
                         <p className="check-subscription-due-price">${dueNow}</p>
                     </div>
-                    <p className="check-subscription-due-text">If your PayPal is connected you will be billed once the proceed to PayPal is pressed.</p>
-
-                    <button onClick={openPayPalAPI} className="paypal-api-icon">Open PayPal API</button>
+                    <PayPalButton planId={planId} />
                 </div>
             </section>
             <Footer />
